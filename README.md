@@ -1,1 +1,1 @@
-# golf-swing-analysis-ai
+# golf-swing-assistant

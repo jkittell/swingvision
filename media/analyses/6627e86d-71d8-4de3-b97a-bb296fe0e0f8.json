@@ -1,0 +1,136 @@
+{
+  "analysis_id": "6627e86d-71d8-4de3-b97a-bb296fe0e0f8",
+  "created_at": "2025-02-11T21:59:46.183757",
+  "original_video": "/media/uploads/6627e86d-71d8-4de3-b97a-bb296fe0e0f8/original.mp4",
+  "frames": [
+    "/media/frames/6627e86d-71d8-4de3-b97a-bb296fe0e0f8/frame_0.jpg",
+    "/media/frames/6627e86d-71d8-4de3-b97a-bb296fe0e0f8/frame_1.jpg",
+    "/media/frames/6627e86d-71d8-4de3-b97a-bb296fe0e0f8/frame_2.jpg",
+    "/media/frames/6627e86d-71d8-4de3-b97a-bb296fe0e0f8/frame_3.jpg",
+    "/media/frames/6627e86d-71d8-4de3-b97a-bb296fe0e0f8/frame_4.jpg",
+    "/media/frames/6627e86d-71d8-4de3-b97a-bb296fe0e0f8/frame_5.jpg"
+  ],
+  "annotated_frames": [
+    "/media/frames/6627e86d-71d8-4de3-b97a-bb296fe0e0f8/annotated/frame_0_annotated.jpg",
+    "/media/frames/6627e86d-71d8-4de3-b97a-bb296fe0e0f8/annotated/frame_1_annotated.jpg",
+    "/media/frames/6627e86d-71d8-4de3-b97a-bb296fe0e0f8/annotated/frame_2_annotated.jpg",
+    "/media/frames/6627e86d-71d8-4de3-b97a-bb296fe0e0f8/annotated/frame_3_annotated.jpg",
+    "/media/frames/6627e86d-71d8-4de3-b97a-bb296fe0e0f8/annotated/frame_4_annotated.jpg",
+    "/media/frames/6627e86d-71d8-4de3-b97a-bb296fe0e0f8/annotated/frame_5_annotated.jpg"
+  ],
+  "frame_count": 6,
+  "analysis_results": {
+    "clip_analysis": {
+      "P1: Address": {
+        "strengths": [
+          "proper athletic golf stance with knees flexed"
+        ],
+        "areas_for_improvement": [],
+        "confidence": 0.9250825643539429,
+        "all_scores": {
+          "proper athletic golf stance with knees flexed": 0.9250825643539429,
+          "weight distributed evenly between feet": 0.030424268916249275,
+          "spine tilted forward from hips at address": 0.02848457545042038,
+          "knees too straight at address": 0.014168070629239082,
+          "poor posture with rounded back": 0.0012620290508493781,
+          "weight too much on toes or heels": 0.0005626354250125587,
+          "arms hanging naturally at address": 1.590574720466975e-05
+        }
+      },
+      "P2: Takeaway": {
+        "strengths": [
+          "club moves back low and slow"
+        ],
+        "areas_for_improvement": [],
+        "confidence": 0.7620638012886047,
+        "all_scores": {
+          "club moves back low and slow": 0.7620638012886047,
+          "club head stays outside hands": 0.16840365529060364,
+          "club moving too far inside": 0.06343301385641098,
+          "shoulders rotating while arms stay connected": 0.004210061393678188,
+          "breaking wrists too early": 0.0012595085427165031,
+          "maintaining triangle between arms and chest": 0.0006169588305056095,
+          "lifting club too quickly": 1.3046726053289603e-05
+        }
+      },
+      "P3: Halfway Back": {
+        "strengths": [
+          "club shaft parallel to ground and target line"
+        ],
+        "areas_for_improvement": [],
+        "confidence": 0.719548761844635,
+        "all_scores": {
+          "club shaft parallel to ground and target line": 0.719548761844635,
+          "hands at hip height in backswing": 0.2591326832771301,
+          "good shoulder rotation with stable head": 0.010094650089740753,
+          "maintaining spine angle": 0.009935114532709122,
+          "loss of spine angle": 0.0012004367308691144,
+          "swaying off the ball": 7.637621456524357e-05,
+          "lifting arms instead of turning": 1.1976509995292872e-05
+        }
+      },
+      "P4: Top": {
+        "strengths": [
+          "club shaft parallel to ground at top"
+        ],
+        "areas_for_improvement": [],
+        "confidence": 0.9500077962875366,
+        "all_scores": {
+          "club shaft parallel to ground at top": 0.9500077962875366,
+          "90 degree shoulder turn": 0.024151241406798363,
+          "weight maintained on inside of back foot": 0.02384939230978489,
+          "collapsing left arm": 0.0010896489256992936,
+          "left arm reasonably straight": 0.000481998868053779,
+          "over-rotation at top": 0.0003762710257433355,
+          "swaying or lifting up": 4.3715252104448155e-05
+        }
+      },
+      "P5: Early Downswing": {
+        "strengths": [
+          "lower body leads the downswing",
+          "good weight shift to lead side"
+        ],
+        "areas_for_improvement": [],
+        "confidence": 0.4623603820800781,
+        "all_scores": {
+          "lower body leads the downswing": 0.4623603820800781,
+          "good weight shift to lead side": 0.41311150789260864,
+          "arms leading the downswing": 0.06333313137292862,
+          "maintaining width in downswing": 0.054070845246315,
+          "arms dropping into slot": 0.006719487253576517,
+          "losing spine angle": 0.0003842594160232693,
+          "casting club from top": 2.0262425096007064e-05
+        }
+      },
+      "P6: Pre-Impact": {
+        "strengths": [
+          "hips open at impact"
+        ],
+        "areas_for_improvement": [],
+        "confidence": 0.9801310896873474,
+        "all_scores": {
+          "hips open at impact": 0.9801310896873474,
+          "maintaining spine angle": 0.01354374922811985,
+          "hands ahead of club head": 0.00492660840973258,
+          "flipping hands through impact": 0.000804475334007293,
+          "early extension": 0.0004015452868770808,
+          "hanging back on trail foot": 0.0001310118823312223,
+          "weight shifted to lead side": 6.161450437502936e-05
+        }
+      }
+    },
+    "phase_analysis": {
+      "P1_ADDRESS": 1,
+      "P2_TAKEAWAY": 1,
+      "P3_HALFWAY_BACK": 1,
+      "P4_TOP": 1,
+      "P5_EARLY_DOWN": 1,
+      "P6_PRE_IMPACT": 1,
+      "P7_IMPACT": 0,
+      "P8_RELEASE": 0,
+      "P9_FOLLOW": 0,
+      "P10_FINISH": 0
+    }
+  },
+  "feedback": "---\n\nCongratulations on your solid foundation in the golf swing! You're off to a great start with a strong address position, a controlled takeaway, and maintaining a parallel shaft through the halfway back position and at the top of your swing.\n\nHowever, I've identified a few areas that, if addressed, can help you maximize your potential.\n\nPriority Improvements:\n1. Swing Plane: Your swing plane seems to be excessively flat, which may lead to issues with distance control and consistency. To rectify this, focus on maintaining a more upright angle during the backswing and downswing.\n\n2. Release: Your hands and club release appear to be early, causing an out-to-in path. To correct this, try focusing on keeping your arms and wrists relaxed and allowing the club to release more gradually through impact.\n\nPractice Plan:\n\n1. Plane Drill: Set up a club on the ground, pointing towards your intended target. As you take the club back, the shaft should brush against the grounded club without touching it. This drill will help you maintain a more upright swing plane.\n\n   Setup: Place a club on the ground, pointing towards your target.\n   Success Metric: The club shaft should brush against the grounded club without touching it during your backswing and downswing.\n   Benefit: This drill helps develop a more upright swing plane, improving your distance control and consistency.\n\n2. Release Drill: Using a short iron, place a tee in the ground directly in front of your golf ball. Swing as normal, aiming to have the clubhead strike the tee on the downswing.\n\n   Setup: Place a tee in the ground directly in front of your golf ball.\n   Success Metric: The clubhead should strike the tee on the downswing without hitting the ball.\n   Benefit: This drill encourages a more controlled release, promoting a straighter flight and increased accuracy.\n\n3. Impact Bag Drill: Hit balls while holding an impact bag between your lead arm and body. This will help you maintain a better connection through impact and improve your release.\n\n   Setup: Hold an impact bag between your lead arm and body as you swing.\n   Success Metric: The impact bag should make contact"
+}

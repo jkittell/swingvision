@@ -1,32 +1,26 @@
 import cv2
-import numpy as np
-import tempfile
-from src.utils.pose_extraction import extract_pose
 
-def process_video(file):
-    # Create a temporary file
-    with tempfile.NamedTemporaryFile(delete=False) as temp_file:
-        # Write the uploaded file to the temporary file
-        temp_file.write(file.read())
-        temp_path = temp_file.name
-    
-    cap = cv2.VideoCapture(temp_path)
+def extract_frames(video_path, fps=30):
+    cap = cv2.VideoCapture(video_path)
+    frames = []
+
+    # Get the frame rate of the video
+    frame_rate = int(cap.get(cv2.CAP_PROP_FPS))
+
+    # Calculate the number of frames to skip to get to the desired frame rate
+    frame_interval = int(frame_rate / fps)
+
     frame_count = 0
-    poses = []
 
-    while cap.isOpened():
-        # Read a chunk of frames (e.g., 10 frames at a time)
-        for _ in range(10):
-            ret, frame = cap.read()
-            if not ret:
-                break
-
-            # Process the frame and extract poses (using your preferred pose estimation method)
-            pose = extract_pose(frame)
-            poses.append(pose)
-
-            frame_count += 1
+    while True:
+        success, frame = cap.read()
+        if not success:
+            break
+        # Extract frames at the specified frame rate
+        if frame_count % frame_interval == 0:
+            frames.append(frame)
+        frame_count += 1
 
     cap.release()
 
-    return poses
+    return frames
