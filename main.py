@@ -1,28 +1,28 @@
 from fastapi import FastAPI
-from fastapi.staticfiles import StaticFiles
-from pathlib import Path
-from src.routers import swing_analysis
+from src.routers.video import router as video_router
+from src.config import Base, engine
+from fastapi.middleware.cors import CORSMiddleware
 
 app = FastAPI(
-    title="Golf Swing Analysis API",
-    description="An API for analyzing and improving golf swings using video processing and AI models.",
+    title="SwingVision API",
+    description="An AI-powered golf swing analysis application that helps golfers improve their game through detailed video analysis and personalized feedback.",
     version="0.1.0",
 )
 
-# Create media directory structure
-media_root = Path("media")
-media_root.mkdir(exist_ok=True)
+# Add CORS middleware
+app.add_middleware(
+    CORSMiddleware,
+    allow_origins=["http://localhost:3001"],
+    allow_credentials=True,
+    allow_methods=["*"],
+    allow_headers=["*"],
+)
 
-# Create subdirectories for different media types
-(media_root / "uploads").mkdir(exist_ok=True)    # Original uploaded videos
-(media_root / "frames").mkdir(exist_ok=True)     # Processed frames
-(media_root / "analyses").mkdir(exist_ok=True)   # Analysis metadata
+# Initialize database
+Base.metadata.create_all(bind=engine)
 
-# Mount the media directory
-app.mount("/media", StaticFiles(directory="media"), name="media")
-
-# Include routers
-app.include_router(swing_analysis.router)
+# Include routers with API versioning
+app.include_router(video_router, prefix="/api/v1")
 
 if __name__ == "__main__":
     import uvicorn
